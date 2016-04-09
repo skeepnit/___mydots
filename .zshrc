@@ -100,7 +100,6 @@ fortune -ca
 # ALIASES #
 ###########
 #
-export INFBA="/home/adrian/Documents/inf-backup/"
 export CLASSPATH=$CLASSPATH:.:/home/adrian/tools/Tools.zip
 
 alias pacman='pacmatic'

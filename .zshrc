@@ -111,8 +111,6 @@ alias brokenzsh='./home/adrian/.brokenzsh'
 alias rm='rm -i'
 
 alias fuck='$(thefuck $(fc -ln -1))'
-#alias studnetz='ssh 147199@139.18.143.253'
-alias suspendandlock='sudo pm-suspend | lock'
 alias susp='sudo -v && lock && sudo pm-suspend'
 alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
 alias mkdir="mkdir -pv"

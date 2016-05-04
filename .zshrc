@@ -122,6 +122,10 @@ alias youtube-viewer='youtube-viewer -C'
 alias k='tree'
 alias xmod='xmodmap ~/.Xmodmap'
 
+#Frequently used dirs
+alias cdm='cd ~/GDrive/New2016/inf2/MuP2/'
+alias cdo='cd ~/GDrive/New2016/inf2/OOPrak/'
+
 #alias for syncing files with Google Drive
 #DEPRICATED... I now use grive (grive2)
 #WARNING: Folder tree changed!
@@ -129,7 +133,8 @@ alias xmod='xmodmap ~/.Xmodmap'
 #alias synctolocal='rclone sync remote:New2016 ~/GDrive'
 
 #alias for syncing files with Google Drive
-alias gr="echo '[Warning] Changing directory' && cd /home/adrian/GDrive/ && grive"
+#alias gr="echo '[Warning] Changing directory' && cd /home/adrian/GDrive/ && grive"
+alias gr="(cd /home/adrian/GDrive/ && grive)"
 
 #Dumb convenience
 alias anger='ranger'

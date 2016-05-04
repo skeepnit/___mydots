@@ -61,7 +61,9 @@ bindsym Mod1+Return exec lxterminal
 bindsym Mod1+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym Mod1+d exec dmenu_run
+bindsym Mod1+Shift+d exec dmenu_run
+bindsym Mod1+d exec rofi -show run
+exec xrdb ~/.Xresources
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -193,7 +195,7 @@ bar {
 }
 
 #new Window border
-new_window 1pixel
+new_window pixel 1
 
 #######################################################################
 # automatically start i3-config-wizard to offer the user to create a
@@ -235,7 +237,7 @@ bindysm XF86MonBrightnessDown exec --no-startup-id sudo /home/adrian/.script/bri
 # shortcuts for most used programs
 bindsym Mod1+Mod4+p exec scrot -s '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/scrots'  
 bindsym Mod1+Mod4+k exec --no-startup-id firefox
-bindsym Mod1+Mod4+g exec --no-startup-id google-chrome-beta
+bindsym Mod1+Mod4+g exec --no-startup-id chromium
 bindsym Mod1+Mod4+h exec --no-startup-id thunar
 bindsym Mod1+Mod4+s exec --no-startup-id spotify
 bindsym Mod1+Mod4+l exec --no-startup-id pavucontrol

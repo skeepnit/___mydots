@@ -138,6 +138,7 @@ alias gr="(cd /home/adrian/GDrive/ && grive)"
 
 #Dumb convenience
 alias anger='ranger'
+alias updatedb='sudo updatedb'
 
 #for ubuntu-like command-not-found functionality
 source /usr/share/doc/pkgfile/command-not-found.zsh

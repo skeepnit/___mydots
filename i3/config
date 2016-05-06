@@ -29,16 +29,16 @@ font Terminus 8
 # font, it doesn't scale on retina/hidpi displays.
 
 # Name workspaces
-set $tag1 eins
-set $tag2 zwei
-set $tag3 drei
-set $tag4 vier
-set $tag5 funf
-set $tag6 sechs
-set $tag7 sieben
-set $tag8 acht
-set $tag9 neun
-set $tag10 zehn
+set $tag1 :music
+set $tag2 :browser
+set $tag3 :code
+set $tag4 :browser2
+set $tag5 :five
+set $tag6 :six
+set $tag7 :seven
+set $tag8 :eight
+set $tag9 :nine
+set $tag10 :ten
 
 
 # use these keys for focus, movement, and resize directions when reaching for
@@ -127,28 +127,28 @@ bindsym Mod1+Shift+minus move scratchpad
 bindsym Mod1+minus scratchpad show
 
 # switch to workspace
-bindsym Mod1+1 workspace 1 $tag1
-bindsym Mod1+2 workspace 2 $tag2
-bindsym Mod1+3 workspace 3 $tag3
-bindsym Mod1+4 workspace 4 $tag4
-bindsym Mod1+5 workspace 5 $tag5
-bindsym Mod1+6 workspace 6 $tag6
-bindsym Mod1+7 workspace 7 $tag7
-bindsym Mod1+8 workspace 8 $tag8
-bindsym Mod1+9 workspace 9 $tag9
-bindsym Mod1+0 workspace 10 $tag10
+bindsym Mod1+1 workspace 1$tag1
+bindsym Mod1+2 workspace 2$tag2
+bindsym Mod1+3 workspace 3$tag3
+bindsym Mod1+4 workspace 4$tag4
+bindsym Mod1+5 workspace 5$tag5
+bindsym Mod1+6 workspace 6$tag6
+bindsym Mod1+7 workspace 7$tag7
+bindsym Mod1+8 workspace 8$tag8
+bindsym Mod1+9 workspace 9$tag9
+bindsym Mod1+0 workspace 10$tag10
 
 # move focused container to workspace
-bindsym Mod1+Shift+1 move container to workspace 1 $tag1
-bindsym Mod1+Shift+2 move container to workspace 2 $tag2
-bindsym Mod1+Shift+3 move container to workspace 3 $tag3
-bindsym Mod1+Shift+4 move container to workspace 4 $tag4
-bindsym Mod1+Shift+5 move container to workspace 5 $tag5
-bindsym Mod1+Shift+6 move container to workspace 6 $tag6
-bindsym Mod1+Shift+7 move container to workspace 7 $tag7
-bindsym Mod1+Shift+8 move container to workspace 8 $tag8
-bindsym Mod1+Shift+9 move container to workspace 9 $tag9
-bindsym Mod1+Shift+0 move container to workspace 10 $tag10
+bindsym Mod1+Shift+1 move container to workspace 1$tag1
+bindsym Mod1+Shift+2 move container to workspace 2$tag2
+bindsym Mod1+Shift+3 move container to workspace 3$tag3
+bindsym Mod1+Shift+4 move container to workspace 4$tag4
+bindsym Mod1+Shift+5 move container to workspace 5$tag5
+bindsym Mod1+Shift+6 move container to workspace 6$tag6
+bindsym Mod1+Shift+7 move container to workspace 7$tag7
+bindsym Mod1+Shift+8 move container to workspace 8$tag8
+bindsym Mod1+Shift+9 move container to workspace 9$tag9
+bindsym Mod1+Shift+0 move container to workspace 10$tag10
 
 # reload the configuration file
 bindsym Mod1+Shift+c reload

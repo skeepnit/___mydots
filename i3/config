@@ -29,16 +29,17 @@ font Terminus 8
 # font, it doesn't scale on retina/hidpi displays.
 
 # Name workspaces
-set $tag1 [1:music]
-set $tag2 [2:browse]
-set $tag3 [3:code]
-set $tag4 [4:browse2]
-set $tag5 [5]
-set $tag6 [6]
-set $tag7 [7]
-set $tag8 [8]
-set $tag9 [9]
-set $tag10 [10]
+set $tag1 [ 1 ]
+set $tag2 [ 2 ]
+set $tag3 [ 3 ]
+set $tag4 [ 4 ]
+set $tag5 [ 5 ]
+set $tag6 [ 6 ]
+set $tag7 [ 7 ]
+set $tag8 [ 8 ]
+set $tag9 [ 9 ]
+set $tag10 [ 10 ]
+
 
 
 # use these keys for focus, movement, and resize directions when reaching for

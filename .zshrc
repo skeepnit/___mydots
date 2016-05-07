@@ -96,6 +96,7 @@ archey3
 # export LANG=en_US.UTF-8 subl
 
 fortune -ca
+
 ###########
 # ALIASES #
 ###########
@@ -121,16 +122,11 @@ alias pingg="ping www.google.com -c3"
 alias youtube-viewer='youtube-viewer -C'
 alias k='tree'
 alias xmod='xmodmap ~/.Xmodmap'
+alias ccat='pygmentize -g'
 
 #Frequently used dirs
 alias cdm='cd ~/GDrive/New2016/inf2/MuP2/'
 alias cdo='cd ~/GDrive/New2016/inf2/OOPrak/'
-
-#alias for syncing files with Google Drive
-#DEPRICATED... I now use grive (grive2)
-#WARNING: Folder tree changed!
-#alias synctodrive='rclone sync ~/GDrive remote:New2016'
-#alias synctolocal='rclone sync remote:New2016 ~/GDrive'
 
 #alias for syncing files with Google Drive
 #alias gr="echo '[Warning] Changing directory' && cd /home/adrian/GDrive/ && grive"

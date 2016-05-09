@@ -123,6 +123,7 @@ alias youtube-viewer='youtube-viewer -C'
 alias k='tree'
 alias xmod='xmodmap ~/.Xmodmap'
 alias ccat='pygmentize -g'
+alias status='git status'
 
 #Frequently used dirs
 alias cdm='cd ~/GDrive/New2016/inf2/MuP2/'

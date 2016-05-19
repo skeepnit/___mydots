@@ -104,7 +104,7 @@ fortune -ca
 export CLASSPATH=$CLASSPATH:.:/home/adrian/tools/Tools.zip
 
 alias pacman='pacmatic'
-alias paud='apacman -Syu --noedit --auronly'
+alias paud='pacaur -Syu --aur'
 alias pacd='sudo pacmatic -Syu'
 alias brokenzsh='./home/adrian/.brokenzsh'
 

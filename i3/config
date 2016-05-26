@@ -245,14 +245,10 @@ bindsym Mod1+Mod4+l exec --no-startup-id pavucontrol
 bindsym Mod1+Mod4+j exec --no-startup-id steam
 bindsym Mod1+Mod4+q exec --no-startup-id qutebrowser
 
-#screensaver
-exec xset s noblank
-exec xscreensaver -no-splash
-
 #make Spotify work :) //since ver1.x not necessary anymore
 #for_window [class="^Spotify$"] floating enable
 #for_window [class="^Spotify Premium$"] floating enable
  
 #get german kb layout when i need it ;)
 bindsym Mod1+p exec setxkbmap de
-bindsym Mod1+Shift+p exec setxkbmap us && xmod
+bindsym Mod1+Shift+p exec setxkbmap us && xmodmap ~/.Xmodmap

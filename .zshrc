@@ -106,6 +106,8 @@ export CLASSPATH=$CLASSPATH:.:/home/adrian/tools/Tools.zip
 alias pacman='pacmatic'
 alias paud='pacaur -Syu --aur'
 alias pacd='sudo pacmatic -Syu'
+alias pausearch='pacaur -Ss'
+
 alias brokenzsh='./home/adrian/.brokenzsh'
 
 alias rm='rm -i'

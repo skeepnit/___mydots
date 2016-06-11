@@ -131,7 +131,7 @@ alias status='git status'
 # plays current directory on shuffle
 alias mqs='mplayer -quiet -shuffle *'
 # we need to go deeper (one directory deeper)
-alias mqss='mplayer- quiet -shuffle {*,*/*}'
+alias mqss='mplayer -quiet -shuffle {*,*/*}'
 
 #Frequently used dirs
 alias cdm='cd ~/GDrive/New2016/inf2/MuP2/'

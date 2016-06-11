@@ -127,6 +127,12 @@ alias xmod='xmodmap ~/.Xmodmap'
 alias ccat='pygmentize -g'
 alias status='git status'
 
+##Mplayer shortcuts for music directories
+# plays current directory on shuffle
+alias mqs='mplayer -quiet -shuffle *'
+# we need to go deeper (one directory deeper)
+alias mqss='mplayer- quiet -shuffle {*,*/*}'
+
 #Frequently used dirs
 alias cdm='cd ~/GDrive/New2016/inf2/MuP2/'
 alias cdo='cd ~/GDrive/New2016/inf2/OOPrak/'

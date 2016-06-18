@@ -269,5 +269,6 @@ bindsym Mod1+p exec setxkbmap de #-option ctrl:nocap
 bindsym Mod2+Shift+p exec setxkbmap us #-option ctrl:nocaps
 
 #Keyboard config
-exec --no-startup=id setxkbmap -option ctrl:nocap && xcape -e 'Control_L=Escape'
+exec setxkbmap -option ctrl:nocap
+exec xcape -e 'Control_L=Escape'
 

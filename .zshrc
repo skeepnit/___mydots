@@ -1,5 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
+export TERM=xterm-256color
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -106,7 +107,8 @@ export CLASSPATH=$CLASSPATH:.:/home/adrian/tools/Tools.zip
 alias pacman='pacmatic'
 alias paud='pacaur -Syu --aur'
 alias pacd='sudo pacmatic -Syu'
-alias pausearch='pacaur -Ss'
+alias pausearch='pacaur -s' #only searches AUR
+alias pacs='pacaur -Ss' #searches all pacman repos + AUR
 
 alias brokenzsh='./home/adrian/.brokenzsh'
 
@@ -134,8 +136,8 @@ alias mqs='mplayer -quiet -shuffle *'
 alias mqss='mplayer -quiet -shuffle {*,*/*}'
 
 #Frequently used dirs
-alias cdm='cd ~/GDrive/New2016/inf2/MuP2/'
-alias cdo='cd ~/GDrive/New2016/inf2/OOPrak/'
+alias cdm='cd ~/gitrepo/study/'
+alias cdo='cd ~/gitrepo/oop2016/'
 
 #alias for syncing files with Google Drive
 #alias gr="echo '[Warning] Changing directory' && cd /home/adrian/GDrive/ && grive"

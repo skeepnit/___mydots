@@ -129,6 +129,10 @@ alias xmod='xmodmap ~/.Xmodmap'
 alias ccat='pygmentize -g'
 alias status='git status'
 
+# Lua/ LOVE
+#for creating .love zips
+alias ziplove='zip -9 -q -r'
+
 ##Mplayer shortcuts for music directories
 # plays current directory on shuffle
 alias mqs='mplayer -quiet -shuffle *'

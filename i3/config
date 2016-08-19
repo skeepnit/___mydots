@@ -210,7 +210,7 @@ new_window pixel 1
 # exec i3-config-wizard
 
 # Monitor choice keybind
-exec_always --no-startup-id ~/bin/autorandr
+#exec_always --no-startup-id ~/bin/autorandr
 
 #workspace 1 output HDMI1
 #workspace 2 output eDP1
@@ -269,6 +269,7 @@ bindsym Mod2+p exec setxkbmap de
 bindsym Mod2+Shift+p exec setxkbmap us
 
 #Keyboard config
-exec /usr/bin/setxkbmap -option ctrl:nocaps
-exec /usr/bin/xcape -e 'Control_L=Escape'
+exec ~/xcapes
+#exec /usr/bin/setxkbmap -option ctrl:nocaps
+#exec /usr/bin/xcape -e 'Control_L=Escape'
 

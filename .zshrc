@@ -104,7 +104,7 @@ fortune -ca
 #
 export CLASSPATH=$CLASSPATH:.:/home/adrian/tools/Tools.zip
 
-alias pacman='pacmatic'
+alias pacman='sudo pacmatic'
 alias paud='pacaur -Syu --aur'
 alias pacd='sudo pacmatic -Syu'
 alias pausearch='pacaur -s' #only searches AUR
@@ -115,7 +115,6 @@ alias brokenzsh='./home/adrian/.brokenzsh'
 alias rm='rm -i'
 
 alias fuck='$(thefuck $(fc -ln -1))'
-alias susp='sudo -v && lock && sudo pm-suspend'
 alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
 alias mkdir="mkdir -pv"
 alias histg="history | grep -ie"

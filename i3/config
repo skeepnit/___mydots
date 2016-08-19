@@ -221,9 +221,9 @@ exec xcompmgr -c -C
 ## BACKGROUND PIC ##
 ####################
 #JPG
-exec --no-startup-id feh --bg-fill ~/Pictures/fehbg.jpg
+exec_always --no-startup-id feh --bg-fill ~/Pictures/fehbg.jpg
 #PNG
-#exec --no-startup-id feh --bg-fill ~/Pictures/fehbg.png
+#exec_always --no-startup-id feh --bg-fill ~/Pictures/fehbg.png
 
 
 
@@ -265,8 +265,8 @@ exec xscreensaver -no-splash
 #for_window [class="^Spotify Premium$"] floating enable
 
 #get german kb layout when i need it ;)
-bindsym Mod2+p exec setxkbmap de
-bindsym Mod2+Shift+p exec setxkbmap us
+#bindsym Mod2+p exec setxkbmap de
+#bindsym Mod2+Shift+p exec setxkbmap us
 
 #Keyboard config
 exec ~/xcapes

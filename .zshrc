@@ -102,7 +102,7 @@ fortune -ca
 # ALIASES #
 ###########
 #
-export CLASSPATH=$CLASSPATH:.:/home/adrian/tools/Tools.zip
+#export CLASSPATH=$CLASSPATH:.:/home/adrian/tools/Tools.zip
 
 alias pacman='sudo pacmatic'
 alias paud='pacaur -Syu --aur'

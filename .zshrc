@@ -105,6 +105,7 @@ fortune -ca
 export CLASSPATH=$CLASSPATH:.:/home/adrian/tools/Tools.zip
 
 alias pacman='sudo pacmatic'
+alias pamcan='sudo pacmatic'
 alias paud='pacaur -Syu --aur'
 alias pacd='sudo pacmatic -Syu'
 alias pausearch='pacaur -s' #only searches AUR
@@ -151,4 +152,5 @@ alias anger='ranger'
 alias updatedb='sudo updatedb'
 
 #for ubuntu-like command-not-found functionality
-source /usr/share/doc/pkgfile/command-not-found.zsh
+#source /usr/share/doc/pkgfile/command-not-found.zsh
+#doesn't seem to work tho

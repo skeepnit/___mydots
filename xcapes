@@ -1,0 +1,13 @@
+#!/bin/bash
+#dependencies: xmodmap xcape
+
+# clear mappings
+setxkbmap -option ''
+
+# do the magic
+xmodmap -e 'clear Lock'
+xmodmap -e 'keycode 66 = Control_L'
+xmodmap -e 'add Control = Control_L'
+# make fake esc key to be mapped with xcape
+xmodmap -e 'keycode 999 = Escape'
+xcape -e 'Control_L=Escape'

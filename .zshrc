@@ -139,10 +139,6 @@ alias mqs='mplayer -quiet -shuffle *'
 # we need to go deeper (one directory deeper)
 alias mqss='mplayer -quiet -shuffle {*,*/*}'
 
-#Frequently used dirs
-alias cdm='cd ~/gitrepo/study/'
-alias cdo='cd ~/gitrepo/oop2016/'
-
 #alias for syncing files with Google Drive
 #alias gr="echo '[Warning] Changing directory' && cd /home/adrian/GDrive/ && grive"
 alias gr="(cd /home/adrian/GDrive/ && grive)"

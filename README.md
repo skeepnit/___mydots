@@ -1,4 +1,4 @@
-# ___mydots
+# My dotfiles
 Hi.
 This is my dotfiles backup archive.
 Please don't use any of my configurations as they just kind of emerged from the defaults over time.

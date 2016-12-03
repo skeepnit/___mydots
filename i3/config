@@ -256,6 +256,9 @@ bindsym Mod1+Mod4+j exec --no-startup-id steam
 bindsym Mod1+Mod4+q exec --no-startup-id qutebrowser
 
 bindsym Mod4+l exec i3lock -i ~/.i3/i3locked1366x768.png
+# ThinkVantage Button
+bindsym XF86Launch1 exec i3lock -i ~/.i3/i3locked1366x768.png
+
 # NO screensaver
 exec xset s noblank
 exec xscreensaver -no-splash

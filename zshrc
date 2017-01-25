@@ -1,4 +1,5 @@
-# Path to your oh-my-zsh installation.
+#
+ Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 export TERM=xterm-256color
 
@@ -47,7 +48,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git archlinux)
 
 # User configuration
 
@@ -106,8 +107,8 @@ fortune -ca
 #
 #export CLASSPATH=$CLASSPATH:.:/home/adrian/tools/Tools.zip
 
-alias pacman='sudo pacmatic'
-alias pamcan='sudo pacmatic'
+# useful shortcuts with pacmatic (not in archlinux zsh-plugin)
+alias pacm='sudo pacmatic'
 alias paud='pacaur -Syu --aur'
 alias pacd='sudo pacmatic -Syu'
 alias pausearch='pacaur -s' #only searches AUR

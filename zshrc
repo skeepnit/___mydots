@@ -47,7 +47,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git archlinux)
+plugins=(git archlinux command-not-found)
 
 # User configuration
 
@@ -143,8 +143,8 @@ alias mqs='mplayer -quiet -shuffle *'
 alias mqss='mplayer -quiet -shuffle {*,*/*}'
 
 #Frequently used dirs
-alias cdm='cd ~/gitrepo/study/'
-alias cdo='cd ~/gitrepo/oop2016/'
+alias ks1='cd ~/gitrepos/ks/Part1'
+alias ks='cd ~/gitrepos/ks/Part2'
 
 #alias for syncing files with Google Drive
 #alias gr="echo '[Warning] Changing directory' && cd /home/adrian/GDrive/ && grive"
@@ -154,7 +154,3 @@ alias gr="(cd /home/adrian/GDrive/ && grive)"
 alias anger='ranger'
 alias r3='ranger ~/GDrive/New2016/inf3'
 alias updatedb='sudo updatedb'
-
-#for ubuntu-like command-not-found functionality
-#source /usr/share/doc/pkgfile/command-not-found.zsh
-#doesn't seem to work tho

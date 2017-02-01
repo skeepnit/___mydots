@@ -91,14 +91,14 @@ alias ...='cd ../..'
 ## cal: use monday as start of the week
 alias cal='cal -m'
 ## Beginning of terminal
-archey3 | lolcat
+# archey3 | lolcat
 
 ## moved to message of the day (/etc/motd):
 # echo "[paud](aur)  [pacd](pacm.) to upgrade\n"
 
 # export LANG=en_US.UTF-8 subl
 
-fortune -ca
+fortune -ca | lolcat
 
 ###########
 # ALIASES #

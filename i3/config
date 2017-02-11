@@ -216,7 +216,7 @@ new_window pixel 1
 #workspace 2 output eDP1
 
 #window transparency
-exec --no-startup-id xcompmgr -c -C
+exec_always --no-startup-id xcompmgr -c -C
 ####################
 ## BACKGROUND PIC ##
 ####################
@@ -224,8 +224,6 @@ exec --no-startup-id xcompmgr -c -C
 exec_always --no-startup-id feh --bg-fill ~/Pictures/fehbg.jpg
 #PNG
 #exec_always --no-startup-id feh --bg-fill ~/Pictures/fehbg.png
-
-
 
 # no right mouse button on trackpad
 exec --no-startup-id synclient RightButtonAreaLeft=0
@@ -240,8 +238,8 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #d
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 1 # increase screen brightness
-bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 1 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 5 # increase screen brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5 # decrease screen brightness
 
 # Media player controls
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause

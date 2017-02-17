@@ -29,16 +29,16 @@ font pango:Terminus 8
 # font, it doesn't scale on retina/hidpi displays.
 
 # Name workspaces
-set $tag1 一
-set $tag2 二
-set $tag3 三
-set $tag4 四
-set $tag5 五
-set $tag6 六
-set $tag7 七
-set $tag8 八
-set $tag9 九
-set $tag10 十
+set $tag1 1:一
+set $tag2 2:二
+set $tag3 3:三
+set $tag4 4:四
+set $tag5 5:五
+set $tag6 6:六
+set $tag7 7:七
+set $tag8 8:八
+set $tag9 9:九
+set $tag10 10:十
 
 
 
@@ -187,6 +187,7 @@ bindsym Mod1+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+  strip_workspace_numbers yes
   position top
     status_command py3status -c ~/.i3/i3status.conf
     colors {

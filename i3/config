@@ -188,7 +188,7 @@ bindsym Mod1+r mode "resize"
 # finds out, if available)
 bar {
   position top
-    status_command i3status -c ~/.i3/i3status.conf
+    status_command py3status -c ~/.i3/i3status.conf
     colors {
       statusline #999999
       background #00212d

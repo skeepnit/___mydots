@@ -3,8 +3,10 @@ Hi.
 
 This is my dotfiles backup archive.
 
-They just kind of emerged from the defaults over time.
+I use: 
 
-I use [oh-my-zsh](http://ohmyz.sh/) for zsh
+  - [oh-my-zsh](http://ohmyz.sh/) | zsh
 
-and [pivotal/vim-config](https://github.com/pivotal/vim-config) for vim
+  - [pivotal/vim-config](https://github.com/pivotal/vim-config) | vim
+
+  - [py3status](https://github.com/ultrabug/py3status) | i3

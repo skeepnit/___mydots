@@ -2,7 +2,7 @@
 #dependencies: xmodmap xcape
 
 # clear mappings
-setxkbmap -option ''
+setxkbmap -option grp:switch,grp:shifts_toggle,grp_led:caps us,de
 
 # do the magic
 xmodmap -e 'clear Lock'

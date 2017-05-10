@@ -239,8 +239,8 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #d
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 5 # increase screen brightness
-bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 1 # increase screen brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 1 # decrease screen brightness
 
 # Media player controls
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
@@ -248,7 +248,7 @@ bindsym XF86AudioNext exec --no-startup-id playerctl next
 bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 
 # shortcuts for most used programs
-bindsym Mod1+Mod4+p exec --no-startup-id scrot -s '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/scrots'  
+bindsym Mod1+Mod4+p exec --no-startup-id scrot -s '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/scrots'
 bindsym Mod1+Mod4+k exec firefox
 bindsym Mod1+Mod4+g exec google-chrome-stable
 bindsym Mod1+Mod4+h exec thunar
@@ -257,7 +257,7 @@ bindsym Mod1+Mod4+l exec --no-startup-id pavucontrol
 bindsym Mod1+Mod4+j exec --no-startup-id steam
 bindsym Mod1+Mod4+q exec --no-startup-id qutebrowser
 
-bindsym Mod4+l exec --no-startup-id i3lock -i ~/.i3/i3locked1366x768.png
+bindsym Mod1+l exec --no-startup-id i3lock -i ~/.i3/i3locked1366x768.png
 bindsym XF86Launch1 exec --no-startup-id i3lock -i ~/.i3/i3locked1366x768.png
 
 # NO screensaver

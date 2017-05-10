@@ -257,7 +257,7 @@ bindsym Mod1+Mod4+l exec --no-startup-id pavucontrol
 bindsym Mod1+Mod4+j exec --no-startup-id steam
 bindsym Mod1+Mod4+q exec --no-startup-id qutebrowser
 
-bindsym Mod1+l exec --no-startup-id i3lock -i ~/.i3/i3locked1366x768.png
+bindsym Mod4+l exec --no-startup-id i3lock -i ~/.i3/i3locked1366x768.png
 bindsym XF86Launch1 exec --no-startup-id i3lock -i ~/.i3/i3locked1366x768.png
 
 # NO screensaver

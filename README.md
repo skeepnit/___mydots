@@ -10,3 +10,5 @@ I use:
   - [pivotal/vim-config](https://github.com/pivotal/vim-config) | vim
 
   - [py3status](https://github.com/ultrabug/py3status) | i3
+  
+  - [termite](https://github.com/thestinger/termite) | terminal 

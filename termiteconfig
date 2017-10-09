@@ -22,29 +22,33 @@
   browser = google-chrome
 
 [colors]
+  # Mostly Solarized_dark
+
   foreground = #FFFFFF
   #foreground_bold = #ffffff
   #foreground_dim = #888888
-  backgound = #000000
-  cursor = #1F1F1F
+  backgound = #002b36
+  cursor = #93a1a1
 
   #if unset, will reverse forgound and background
-  highlight = #2f2f2f
+  #highlight = #ffffff
 
-  color0 = #000000
-  color1 = #AA0000
-  color2 = #00AA00
-  color3 = #AA5500
-  color4 = #0000AA
-  color5 = #AA00AA
-  color6 = #00AAAA
-  color7 = #AAAAAA
-  color8 = #555555
-  color9 = #FF5555
-  color10 = #55FF55
-  color11 = #FFFF55
-  color12 = #5555FF
-  color13 = #FF55FF
-  color14 = #55FFFF
-  color15 = #FFFFFF
+  #colors from color0 to color 254 can be set
+  color0 = #073642 
+  color1 = #e51414
+  color2 = #00ff00
+  color3 = #b58900
+  color4 = #268bd2
+  color5 = #d33682
+  color6 = #2aa198
+  color7 = #eee8d5
+  color8 = #002b36
+  color9 = #cb4b16
+  color10 = #586e75
+  color11 = #657b83
+  color12 = #839496
+  color13 = #6c71c4
+  color14 = #39a1a1
+  color15 = #fdf6e3
+
 

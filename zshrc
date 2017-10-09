@@ -131,6 +131,7 @@ alias k='tree'
 alias xmod='xmodmap ~/.Xmodmap'
 alias ccat='pygmentize -g'
 alias status='git status'
+alias open='xdg-open'
 
 # Lua/ LOVE
 #for creating .love zips

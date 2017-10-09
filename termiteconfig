@@ -1,3 +1,50 @@
 [options]
-font = xos4 Terminus 14px
+  font = xos4 Terminus 14px
+  resize_grip = false
+  scroll_on_output = false
+  scroll_on_keystroke = true
+  audible_bell = false
+  visible_bell = true
+  mouse_autohide = true
+  allow_bold = true
+  dynamic_title = true
+  urgent_on_bell = true
+  clickable_url = true
+  scrollback_lines = 10000
+  search_wrap = true
+
+  # system/on/off
+  cursor_blink = off
+
+  # block/underline/ibeam
+  cursor_shape = block
+
+  browser = google-chrome
+
+[colors]
+  foreground = #FFFFFF
+  #foreground_bold = #ffffff
+  #foreground_dim = #888888
+  backgound = #000000
+  cursor = #1F1F1F
+
+  #if unset, will reverse forgound and background
+  highlight = #2f2f2f
+
+  color0 = #000000
+  color1 = #AA0000
+  color2 = #00AA00
+  color3 = #AA5500
+  color4 = #0000AA
+  color5 = #AA00AA
+  color6 = #00AAAA
+  color7 = #AAAAAA
+  color8 = #555555
+  color9 = #FF5555
+  color10 = #55FF55
+  color11 = #FFFF55
+  color12 = #5555FF
+  color13 = #FF55FF
+  color14 = #55FFFF
+  color15 = #FFFFFF
 

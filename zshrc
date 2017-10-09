@@ -153,5 +153,5 @@ alias gr="(cd /home/adrian/GDrive/ && grive)"
 
 #Dumb convenience
 alias anger='ranger'
-alias r3='ranger ~/GDrive/New2016/inf3'
+alias r5='ranger ~/GDrive/New2016/inf5'
 alias updatedb='sudo updatedb'

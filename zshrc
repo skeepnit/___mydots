@@ -132,6 +132,7 @@ alias xmod='xmodmap ~/.Xmodmap'
 alias ccat='pygmentize -g'
 alias status='git status'
 alias open='xdg-open'
+alias wtr="curl 'wttr.in/?0'"
 
 # Lua/ LOVE
 #for creating .love zips
@@ -153,5 +154,6 @@ alias gr="(cd /home/adrian/GDrive/ && grive)"
 
 #Dumb convenience
 alias anger='ranger'
+alias i5='cd ~/GDrive/New2016/inf5'
 alias r5='ranger ~/GDrive/New2016/inf5'
 alias updatedb='sudo updatedb'

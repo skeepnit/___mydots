@@ -132,6 +132,6 @@ alias mqs='mplayer -quiet -shuffle *'
 alias mqss='mplayer -quiet -shuffle {*,*/*}'
 
 alias cdo='cd ~/gitrepos/OOP17'
-alias i5='cd ~/GDrive/New2016/inf5'
-alias r5='ranger ~/GDrive/New2016/inf5'
+alias i5='cd ~/Google\ Drive/New2016/inf5'
+alias r5='ranger ~/Google\ Drive/New2016/inf5'
 

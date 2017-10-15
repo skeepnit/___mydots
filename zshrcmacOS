@@ -51,7 +51,7 @@ plugins=(git )
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/texlive/2017/bin/x86_64-darwin/:"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -112,6 +112,7 @@ alias topg="top | grep -ie"
 alias lsg="ls -l | grep -ie"
 alias lag="ls -la | grep -ie"
 alias pingg="ping www.google.com -c3"
+alias bingg="ping www.bing.com -c3"
 alias youtube-viewer='youtube-viewer -C'
 alias k='tree'
 alias xmod='xmodmap ~/.Xmodmap'
@@ -127,3 +128,5 @@ alias ziplove='zip -9 -q -r'
 alias mqs='mplayer -quiet -shuffle *'
 # we need to go deeper (one directory deeper)
 alias mqss='mplayer -quiet -shuffle {*,*/*}'
+
+alias cdo='cd ~/gitrepos/OOP17'

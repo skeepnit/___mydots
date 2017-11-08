@@ -153,6 +153,7 @@ alias ks='cd ~/gitrepos/ks/Part2'
 alias gr="(cd /home/adrian/GDrive/ && grive)"
 
 #Dumb convenience
+alias cdo="cd ~/gitrepos/na17a/"
 alias anger='ranger'
 alias i5='cd ~/GDrive/New2016/inf5'
 alias r5='ranger ~/GDrive/New2016/inf5'

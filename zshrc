@@ -154,7 +154,7 @@ alias gr="(cd /home/adrian/GDrive/ && grive)"
 
 #Dumb convenience
 alias cdo="cd ~/gitrepos/na17a/"
-alias deployws='rsync -av /home/adrian/gitrepos/na17a/Website/* na17a@pcai042.informatik.uni-leipzig.de:/home/na17a/public_html'
+alias deployws='rsync -avP /home/adrian/gitrepos/na17a/Website/* na17a@pcai042.informatik.uni-leipzig.de:/home/na17a/public_html'
 alias anger='ranger'
 alias i5='cd ~/GDrive/New2016/inf5'
 alias r5='ranger ~/GDrive/New2016/inf5'

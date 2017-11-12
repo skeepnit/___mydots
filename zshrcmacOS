@@ -132,6 +132,6 @@ alias mqs='mplayer -quiet -shuffle *'
 alias mqss='mplayer -quiet -shuffle {*,*/*}'
 
 alias cdo='cd ~/gitrepos/na17a/'
-alias deployws='rsync -avP /home/adrian/gitrepos/na17a/Website/* na17a@pcai042.informatik.uni-leipzig.de:/home/na17a/public_html'
+alias deployws='rsync -avP /Users/adrian/gitrepos/na17a/Website/* na17a@pcai042.informatik.uni-leipzig.de:/home/na17a/public_html'
 alias i5='cd ~/Google\ Drive/New2016/inf5'
 alias r5='ranger ~/Google\ Drive/New2016/inf5'

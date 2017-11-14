@@ -17,7 +17,7 @@
 font pango:Unifont Sans-Serif 12
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
-# text rendering and scalability on retina/hidpi displays (thanks to pango).
+
 #font pango:DejaVu Sans Mono 8
 font pango:Terminus 8
 
@@ -40,6 +40,8 @@ set $tag8 8:八
 set $tag9 9:九
 set $tag10 10:十
 
+# alternate vertical and horizontal split
+for_window [class=".*"] split toggle
 
 
 # use these keys for focus, movement, and resize directions when reaching for
@@ -55,8 +57,8 @@ floating_modifier Mod1
 # start a terminal
 #bindsym Mod1+Return exec i3-sensible-terminal
 
-# start lxterminal as default terminal with Mod+Return
-bindsym Mod1+Return exec lxterminal
+# start insensible terminal  as default terminal with Mod+Return
+bindsym Mod1+Return exec termite
 
 # kill focused window
 bindsym Mod1+Shift+q kill
@@ -239,8 +241,8 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #d
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 1 # increase screen brightness
-bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 1 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 5 # increase screen brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5 # decrease screen brightness
 
 # Media player controls
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
@@ -275,7 +277,7 @@ exec --no-startup-id redshift-gtk
 #bindsym Mod2+Shift+p exec setxkbmap us
 
 #Keyboard config
-exec --no-startup-id ~/xcapes
+exec --no-startup-id $HOME/xcapes
 #exec /usr/bin/setxkbmap -option ctrl:nocaps
 #exec /usr/bin/xcape -e 'Control_L=Escape'
 

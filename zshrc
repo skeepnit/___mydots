@@ -133,6 +133,7 @@ alias ccat='pygmentize -g'
 alias status='git status'
 alias open='xdg-open'
 alias wtr="curl 'wttr.in/?0'"
+alias myip="curl http://ipecho.net/plain && echo"
 
 # Lua/ LOVE
 #for creating .love zips
@@ -154,6 +155,10 @@ alias gr="(cd /home/adrian/GDrive/ && grive)"
 
 #Dumb convenience
 alias cdo="cd ~/gitrepos/na17a/"
+cdoo() {
+  cd ~/gitrepos/na17a/
+  git pull
+}
 alias deployws='rsync -avP /home/adrian/gitrepos/na17a/Website/* na17a@pcai042.informatik.uni-leipzig.de:/home/na17a/public_html'
 alias anger='ranger'
 alias i5='cd ~/GDrive/New2016/inf5'

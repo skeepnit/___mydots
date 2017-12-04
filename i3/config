@@ -41,7 +41,7 @@ set $tag9 9:九
 set $tag10 10:十
 
 # alternate vertical and horizontal split
-for_window [class=".*"] split toggle
+# for_window [class=".*"] split toggle
 
 
 # use these keys for focus, movement, and resize directions when reaching for
@@ -107,8 +107,8 @@ bindsym Mod1+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym Mod1+s layout stacking
-bindsym Mod1+w layout tabbed
-bindsym Mod1+e layout toggle split
+bindsym Mod1+e layout tabbed
+bindsym Mod1+w layout toggle split
 
 # toggle tiling / floating
 bindsym Mod1+Shift+space floating toggle
@@ -241,8 +241,8 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #d
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 5 # increase screen brightness
-bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 2 # increase screen brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 2 # decrease screen brightness
 
 # Media player controls
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause

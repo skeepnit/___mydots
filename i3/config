@@ -16,7 +16,8 @@
 # is used in the bar {} block below.
 #font pango:Unifont Sans-Serif 8
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
-font pango:DejaVu Sans Mono 8
+#font pango:DejaVu Sans Mono 8
+font pango:Homespun TT BRK 8
 #font pango:Terminus 8
 
 # Before i3 v4.8, we used to recommend this one as the default:
@@ -262,6 +263,7 @@ bindsym Mod1+Mod4+q exec --no-startup-id qutebrowser
 
 bindsym Mod4+l exec --no-startup-id i3lock -i ~/.i3/i3locked1366x768.png
 bindsym XF86Launch1 exec --no-startup-id i3lock -i ~/.i3/i3locked1366x768.png
+bindsym XF86ScreenSaver exec --no-startup-id i3lock -i ~/.i3/i3locked1366x768.png
 
 # NO screensaver
 exec --no-startup-id xset s noblank

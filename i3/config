@@ -264,7 +264,7 @@ bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 bindcode 77 exec --no-startup-id playerctl previous
 
 # shortcuts for most used programs
-bindsym Mod1+Mod4+p exec --no-startup-id scrot -s '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/scrots'
+bindsym --release Mod1+Mod4+p exec --no-startup-id scrot -s '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/scrots/'
 bindsym Mod1+Mod4+k exec firefox
 bindsym Mod1+Mod4+g exec google-chrome-stable
 bindsym Mod1+Mod4+h exec thunar
@@ -305,4 +305,4 @@ exec --no-startup-id xfce4-power-manager
 exec --no-startup-id $HOME/xcapes
 #exec /usr/bin/setxkbmap -option ctrl:nocaps
 #exec /usr/bin/xcape -e 'Control_L=Escape'
-
+exec --no-startup-id mpv /home/adrian/oxp.wav

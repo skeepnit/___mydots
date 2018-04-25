@@ -54,6 +54,10 @@ plugins=(git archlinux command-not-found)
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
 # export MANPATH="/usr/local/man:$MANPATH"
 
+#for python virtualenv
+export WORKON_HOME=~/.virtualenvs
+source /usr/bin/virtualenvwrapper.sh
+
 source $ZSH/oh-my-zsh.sh
 # needs to have 'zsh-syntax-highlighting' installed
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -98,7 +102,7 @@ alias cal='cal -m'
 
 # export LANG=en_US.UTF-8 subl
 
-fortune -ca | lolcat
+fortune -cas | lolcat
 
 ###########
 # ALIASES #
@@ -161,8 +165,18 @@ cdoo() {
   echo "Updating repo..."
   git pull
 }
+cdi() {
+  echo "Repo: infovis"
+  echo "cd infovisausarbeitung/"
+  cd ~/gitrepos/infovis/infovisausarbeitung/
+}
+
+tryping() {
+  until ping -c3 www.google.com; do echo "[it's no worki, trying again]"; done;
+}
 alias deployws='rsync -avP /home/adrian/gitrepos/na17a/Website/* na17a@pcai042.informatik.uni-leipzig.de:/home/na17a/public_html'
+alias mldeployws='rsync -avP /home/adrian/gitrepos/na17a/Website/* root@159.89.4.16:/var/www/html/'
 alias anger='ranger'
-alias i5='cd ~/GDrive/New2016/inf5'
-alias r5='ranger ~/GDrive/New2016/inf5'
+alias ii='cd ~/GDrive/New2016/inf6'
+alias rr='ranger ~/GDrive/New2016/inf6'
 alias updatedb='sudo updatedb'

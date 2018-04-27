@@ -1,4 +1,4 @@
-#Path to your oh-my-zsh installation.
+# Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 export TERM=xterm-256color
 
@@ -7,7 +7,7 @@ export TERM=xterm-256color
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 # prev.: aussiegeek, re5et
-ZSH_THEME="re5et"
+ZSH_THEME="lukerandall"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -47,16 +47,15 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git archlinux command-not-found)
+plugins=(git )
 
 # User configuration
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/texlive/2017/bin/x86_64-darwin/:"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
-# needs to have 'zsh-syntax-highlighting' installed
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
@@ -82,36 +81,22 @@ export ARCHFLAGS="-arch x86_64"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+# [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 ## cd
 alias ..='cd ..'
 alias ...='cd ../..'
 
-## cal: use monday as start of the week
-alias cal='cal -m'
-## Beginning of terminal
-# archey3 | lolcat
-
-## moved to message of the day (/etc/motd):
-# echo "[paud](aur)  [pacd](pacm.) to upgrade\n"
+#Beginning of Terminal
 
 # export LANG=en_US.UTF-8 subl
-
-fortune -ca | lolcat
+fortune -a | lolcat
 
 ###########
 # ALIASES #
 ###########
 #
 #export CLASSPATH=$CLASSPATH:.:/home/adrian/tools/Tools.zip
-
-# useful shortcuts with pacmatic (not in archlinux zsh-plugin)
-alias pacm='sudo pacmatic'
-alias paud='pacaur -Syu --aur'
-alias pacd='sudo pacmatic -Syu'
-alias pausearch='pacaur -s' #only searches AUR
-alias pacs='pacaur -Ss' #searches all pacman repos + AUR
 
 alias brokenzsh='./home/adrian/.brokenzsh'
 
@@ -126,14 +111,14 @@ alias topg="top | grep -ie"
 alias lsg="ls -l | grep -ie"
 alias lag="ls -la | grep -ie"
 alias pingg="ping www.google.com -c3"
+alias bingg="ping www.bing.com -c3"
 alias youtube-viewer='youtube-viewer -C'
 alias k='tree'
 alias xmod='xmodmap ~/.Xmodmap'
 alias ccat='pygmentize -g'
 alias status='git status'
-alias open='xdg-open'
 alias wtr="curl 'wttr.in/?0'"
-alias myip="curl http://ipecho.net/plain && echo"
+
 
 # Lua/ LOVE
 #for creating .love zips
@@ -145,24 +130,14 @@ alias mqs='mplayer -quiet -shuffle *'
 # we need to go deeper (one directory deeper)
 alias mqss='mplayer -quiet -shuffle {*,*/*}'
 
-#Frequently used dirs
-alias ks1='cd ~/gitrepos/ks/Part1'
-alias ks='cd ~/gitrepos/ks/Part2'
-
-#alias for syncing files with Google Drive
-#alias gr="echo '[Warning] Changing directory' && cd /home/adrian/GDrive/ && grive"
-alias gr="(cd /home/adrian/GDrive/ && grive)"
-
-#Dumb convenience
-alias cdo="cd ~/gitrepos/na17a/"
+alias cdo='cd ~/gitrepos/na17a/'
 cdoo() {
   echo "Repo: na17a"
   cd ~/gitrepos/na17a/
   echo "Updating repo..."
   git pull
 }
-alias deployws='rsync -avP /home/adrian/gitrepos/na17a/Website/* na17a@pcai042.informatik.uni-leipzig.de:/home/na17a/public_html'
-alias anger='ranger'
-alias i5='cd ~/GDrive/New2016/inf5'
-alias r5='ranger ~/GDrive/New2016/inf5'
-alias updatedb='sudo updatedb'
+alias deployws='rsync -avP /Users/adrian/gitrepos/na17a/Website/* na17a@pcai042.informatik.uni-leipzig.de:/home/na17a/public_html'
+alias i5='cd ~/Google\ Drive/New2016/inf5'
+alias r5='ranger ~/Google\ Drive/New2016/inf5'
+alias checkpy='pylama ~/gitrepos/na17a/src -l "pycodestyle,mccabe,pydocstyle" -i D212'

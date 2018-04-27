@@ -47,16 +47,16 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git archlinux command-not-found)
+plugins=(git debian command-not-found)
 
 # User configuration
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+#export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
 # needs to have 'zsh-syntax-highlighting' installed
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
@@ -163,6 +163,6 @@ cdoo() {
 }
 alias deployws='rsync -avP /home/adrian/gitrepos/na17a/Website/* na17a@pcai042.informatik.uni-leipzig.de:/home/na17a/public_html'
 alias anger='ranger'
-alias i5='cd ~/GDrive/New2016/inf5'
-alias r5='ranger ~/GDrive/New2016/inf5'
+alias ii='cd ~/GDrive/New2016/inf6'
+alias rr='ranger ~/GDrive/New2016/inf6'
 alias updatedb='sudo updatedb'

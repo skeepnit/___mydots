@@ -173,7 +173,7 @@ cdi() {
 
 #Todolist
 t(){
-  (cd /home/adrian/GDrive/ && todolist $@)
+  (cd /home/adrian/GDrive/todolist && todolist $@)
 }
 
 tryping() {

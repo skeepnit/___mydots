@@ -11,4 +11,27 @@ I use:
 
   - [py3status](https://github.com/ultrabug/py3status) | i3
   
-  - [termite](https://github.com/thestinger/termite) | terminal 
+## kogata
+Lenovo ThinkPad X220
+```
+
+               +                OS: Arch Linux x86_64
+               #                Hostname: kogata
+              ###               
+             #####              
+             ######             WM: i3
+            ; #####;            DE: None
+           +##.#####            
+          +##########           RAM: 7862 MB
+         #############;         Processor Type: Intel(R) Core(TM) i5-2410M CPU @ 2.30GHz
+        ###############+        $EDITOR: vim
+       #######   #######        Root: 110 GB (ext4)
+     .######;     ;###;`".      
+    .#######;     ;#####.       
+    #########.   .########`     
+   ######'           '######    
+  ;####                 ####;   
+  ##'                     '##   
+ #'                         `#  
+
+```

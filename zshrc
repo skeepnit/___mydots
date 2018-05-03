@@ -171,6 +171,11 @@ cdi() {
   cd ~/gitrepos/infovis/infovisausarbeitung/
 }
 
+#Todolist
+t(){
+  (cd /home/adrian/GDrive/ && todolist $@)
+}
+
 tryping() {
   until ping -c3 www.google.com; do echo "[it's no worki, trying again]"; done;
 }

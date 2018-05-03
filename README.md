@@ -3,12 +3,10 @@ Hi.
 
 This is my dotfiles backup archive.
 
-I use: 
+Each hostname has its own branch.
 
-  - [oh-my-zsh](http://ohmyz.sh/) | zsh
+The master branch is the (empty) blueprint for future branches.
 
-  - [pivotal/vim-config](https://github.com/pivotal/vim-config) | vim
+## TODO
 
-  - [py3status](https://github.com/ultrabug/py3status) | i3
-  
-  - [termite](https://github.com/thestinger/termite) | terminal 
+- Add more dotfiles because "Impossible. Perhaps the archives are incomplete"

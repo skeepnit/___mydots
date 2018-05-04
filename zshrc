@@ -117,8 +117,15 @@ alias k='tree'
 alias xmod='xmodmap ~/.Xmodmap'
 alias ccat='pygmentize -g'
 alias status='git status'
-alias wtr="curl 'wttr.in/?0'"
 
+wtr() {
+  if [ -z "$1" ]; then
+    q="wttr.in/?0"
+  else
+    q="wttr.in/~$1?0"
+  fi
+  curl $q
+}
 
 # Lua/ LOVE
 #for creating .love zips
@@ -137,6 +144,11 @@ cdoo() {
   echo "Updating repo..."
   git pull
 }
+
+t() {
+  (cd "/Users/adrian/Google Drive/todolist" && todolist $@)
+}
+
 alias deployws='rsync -avP /Users/adrian/gitrepos/na17a/Website/* na17a@pcai042.informatik.uni-leipzig.de:/home/na17a/public_html'
 alias i5='cd ~/Google\ Drive/New2016/inf5'
 alias r5='ranger ~/Google\ Drive/New2016/inf5'

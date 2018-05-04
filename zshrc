@@ -136,8 +136,16 @@ alias xmod='xmodmap ~/.Xmodmap'
 alias ccat='pygmentize -g'
 alias status='git status'
 alias open='xdg-open'
-alias wtr="curl 'wttr.in/?0'"
 alias myip="curl http://ipecho.net/plain && echo"
+
+wtr() {
+  if [ -z "$1" ]; then
+    q="wttr.in/?0"
+  else
+    q="wttr.in/~$1?0"
+  fi
+  curl $q
+}
 
 # Lua/ LOVE
 #for creating .love zips

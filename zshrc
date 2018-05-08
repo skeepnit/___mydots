@@ -184,6 +184,8 @@ t(){
   (cd /home/adrian/GDrive/todolist && todolist $@)
 }
 
+alias tl="t l"
+
 tryping() {
   until ping -c3 www.google.com; do echo "[it's no worki, trying again]"; done;
 }

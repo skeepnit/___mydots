@@ -266,7 +266,7 @@ bindcode 77 exec --no-startup-id playerctl previous
 # shortcuts for most used programs
 bindsym --release Mod1+Mod4+p exec --no-startup-id scrot -s '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/scrots/'
 bindsym Mod1+Mod4+k exec firefox
-bindsym Mod1+Mod4+g exec vivaldi-stable
+bindsym Mod1+Mod4+g exec google-chrome-stable
 bindsym Mod1+Mod4+h exec thunar
 bindsym Mod1+Mod4+s exec spotify
 bindsym Mod1+Mod4+l exec --no-startup-id pavucontrol
@@ -282,7 +282,21 @@ bindsym Mod4+l exec --no-startup-id i3lock -i ~/.i3/i3locked1366x768.png
 bindsym XF86Launch1 exec --no-startup-id i3lock -i ~/.i3/i3locked1366x768.png
 bindsym XF86ScreenSaver exec --no-startup-id i3lock -i ~/.i3/i3locked1366x768.png
 
+set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
+mode "$mode_system" {
+    bindsym l exec --no-startup-id /home/adrian/.i3/i3exit lock, mode "default"
+    bindsym e exec --no-startup-id /home/adrian/.i3/i3exit logout, mode "default"
+    bindsym s exec --no-startup-id /home/adrian/.i3/i3exit suspend, mode "default"
+    bindsym h exec --no-startup-id /home/adrian/.i3/i3exit hibernate, mode "default"
+    bindsym r exec --no-startup-id /home/adrian/.i3/i3exit reboot, mode "default"
+    bindsym Shift+s exec --no-startup-id /home/adrian/.i3/i3exit shutdown, mode "default"
 
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+bindsym $mod+Pause mode "$mode_system"
 
 # NO screensaver
 exec --no-startup-id xset s noblank

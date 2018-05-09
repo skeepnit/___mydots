@@ -98,8 +98,18 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias gr="(cd /home/adrian/tl && grive -s todolist)"
-
-t() {
-  (cd /home/adrian/tl/todolist/ && todolist $@)
+#Todolist
+t(){
+  (cd /home/adrian/gitrepos/todolist && todolist $@ && git commit -am "update todolist (autocommit)")
 }
+
+todo() {
+  (cd /home/adrian/gitrepos/todolist && todolist $@)
+}
+
+alias tl="todo l"
+
+tgp() {
+  (cd /home/adrian/gitrepos/todolist && git push)
+}
+

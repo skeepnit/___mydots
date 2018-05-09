@@ -191,7 +191,15 @@ todo() {
 alias tl="todo l"
 
 tgp() {
-  (cd /home/adrian/gitrepos/todolist && git push)
+  (cd /home/adrian/gitrepos/todolist && git push $@)
+}
+
+tgl() {
+  (cd /home/adrian/gitrepos/todolist && git pull $@)
+}
+
+tg() {
+  (cd /home/adrian/gitrepos/todolist && git $@)
 }
 
 tryping() {

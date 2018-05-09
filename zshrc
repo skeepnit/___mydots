@@ -181,10 +181,18 @@ cdi() {
 
 #Todolist
 t(){
-  (cd /home/adrian/GDrive/todolist && todolist $@)
+  (cd /home/adrian/gitrepos/todolist && todolist $@ && git commit -am "update todolist (autocommit)")
 }
 
-alias tl="t l"
+todo() {
+  (cd /home/adrian/gitrepos/todolist && todolist $@)
+}
+
+alias tl="todo l"
+
+tgp() {
+  (cd /home/adrian/gitrepos/todolist && git push)
+}
 
 tryping() {
   until ping -c3 www.google.com; do echo "[it's no worki, trying again]"; done;

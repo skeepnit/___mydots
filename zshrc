@@ -96,9 +96,9 @@ fortune -a | lolcat
 # ALIASES #
 ###########
 #
-#export CLASSPATH=$CLASSPATH:.:/home/adrian/tools/Tools.zip
+#export CLASSPATH=$CLASSPATH:.:/Users/adrian/tools/Tools.zip
 
-alias brokenzsh='./home/adrian/.brokenzsh'
+alias brokenzsh='./Users/adrian/.brokenzsh'
 
 alias rm='rm -i'
 alias dtrx='dtrx -v'
@@ -147,25 +147,25 @@ cdoo() {
 
 #Todolist
 t(){
-  (cd /home/adrian/gitrepos/todolist && todolist $@ && git commit -am "update todolist (autocommit)")
+  (cd /Users/adrian/gitrepos/todolist && todolist $@ && git commit -am "update todolist (autocommit)")
 }
 
 todo() {
-  (cd /home/adrian/gitrepos/todolist && todolist $@)
+  (cd /Users/adrian/gitrepos/todolist && todolist $@)
 }
 
 alias tl="todo l"
 
 tgp() {
-  (cd /home/adrian/gitrepos/todolist && git push $@)
+  (cd /Users/adrian/gitrepos/todolist && git push $@)
 }
 
 tgl() {
-  (cd /home/adrian/gitrepos/todolist && git pull $@)
+  (cd /Users/adrian/gitrepos/todolist && git pull $@)
 }
 
 tg() {
-  (cd /home/adrian/gitrepos/todolist && git $@)
+  (cd /Users/adrian/gitrepos/todolist && git $@)
 }
 
 alias deployws='rsync -avP /Users/adrian/gitrepos/na17a/Website/* na17a@pcai042.informatik.uni-leipzig.de:/home/na17a/public_html'

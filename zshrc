@@ -155,6 +155,7 @@ todo() {
 }
 
 alias tl="todo l"
+alias tll="todo l by project"
 
 tgp() {
   (cd /Users/adrian/gitrepos/todolist && git push $@)
@@ -169,6 +170,5 @@ tg() {
 }
 
 alias deployws='rsync -avP /Users/adrian/gitrepos/na17a/Website/* na17a@pcai042.informatik.uni-leipzig.de:/home/na17a/public_html'
-alias i5='cd ~/Google\ Drive/New2016/inf5'
-alias r5='ranger ~/Google\ Drive/New2016/inf5'
-alias checkpy='pylama ~/gitrepos/na17a/src -l "pycodestyle,mccabe,pydocstyle" -i D212'
+alias ii='cd ~/Google\ Drive/New2016/inf6'
+alias rr='ranger ~/Google\ Drive/New2016/inf6'

@@ -145,8 +145,27 @@ cdoo() {
   git pull
 }
 
-t() {
-  (cd "/Users/adrian/Google Drive/todolist" && todolist $@)
+#Todolist
+t(){
+  (cd /home/adrian/gitrepos/todolist && todolist $@ && git commit -am "update todolist (autocommit)")
+}
+
+todo() {
+  (cd /home/adrian/gitrepos/todolist && todolist $@)
+}
+
+alias tl="todo l"
+
+tgp() {
+  (cd /home/adrian/gitrepos/todolist && git push $@)
+}
+
+tgl() {
+  (cd /home/adrian/gitrepos/todolist && git pull $@)
+}
+
+tg() {
+  (cd /home/adrian/gitrepos/todolist && git $@)
 }
 
 alias deployws='rsync -avP /Users/adrian/gitrepos/na17a/Website/* na17a@pcai042.informatik.uni-leipzig.de:/home/na17a/public_html'

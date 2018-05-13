@@ -161,6 +161,31 @@ cdoo() {
   echo "Updating repo..."
   git pull
 }
+
+#Todolist
+t(){
+  (cd /home/adrian/gitrepos/todolist && todolist $@ && git commit -am "update todolist (autocommit)")
+}
+
+todo() {
+  (cd /home/adrian/gitrepos/todolist && todolist $@)
+}
+
+alias tl="todo l"
+alias tll="todo l by project"
+
+tgp() {
+  (cd /home/adrian/gitrepos/todolist && git push $@)
+}
+
+tgl() {
+  (cd /home/adrian/gitrepos/todolist && git pull $@)
+}
+
+tg() {
+  (cd /home/adrian/gitrepos/todolist && git $@)
+}
+
 alias deployws='rsync -avP /home/adrian/gitrepos/na17a/Website/* na17a@pcai042.informatik.uni-leipzig.de:/home/na17a/public_html'
 alias anger='ranger'
 alias ii='cd ~/GDrive/New2016/inf6'

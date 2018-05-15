@@ -153,6 +153,30 @@ alias ks='cd ~/gitrepos/ks/Part2'
 #alias gr="echo '[Warning] Changing directory' && cd /home/adrian/GDrive/ && grive"
 alias gr="(cd /home/adrian/GDrive/ && grive)"
 
+#todolist
+t(){
+  (cd /home/af29lure/gitrepos/todolist && todolist $@ && git commit -am "update todolist (autocommit)")
+}
+
+todo() {
+  (cd /home/af29lure/gitrepos/todolist && todolist $@)
+}
+
+alias tl="todo l"
+alias tll="todo l by project"
+
+tgp() {
+  (cd /home/af29lure/gitrepos/todolist && git push $@)
+}
+
+tgl() {
+  (cd /home/af29lure/gitrepos/todolist && git pull $@)
+}
+
+tg() {
+  (cd /home/af29lure/gitrepos/todolist && git $@)
+}
+
 #Dumb convenience
 alias cdo="cd ~/gitrepos/na17a/"
 cdoo() {

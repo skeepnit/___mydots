@@ -1,7 +1,7 @@
 #!/bin/sh
 
 screenlock() {
-  i3lock -i ~/.i3/i3locked1920x1080.jpg
+  i3lock -i ~/Pictures/stars-locked.png
 }
 
 case "$1" in

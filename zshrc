@@ -155,11 +155,11 @@ alias gr="(cd /home/adrian/GDrive/ && grive)"
 
 #todolist
 t(){
-  (cd /home/af29lure/gitrepos/todolist && todolist $@ && git commit -am "update todolist (autocommit)")
+  (cd /home/af29lure/gitrepos/todolist && ./todolist-1 $@ && git commit -am "update todolist (autocommit)")
 }
 
 todo() {
-  (cd /home/af29lure/gitrepos/todolist && todolist $@)
+  (cd /home/af29lure/gitrepos/todolist && ./todolist-1 $@)
 }
 
 alias tl="todo l"
@@ -178,10 +178,10 @@ tg() {
 }
 
 #Dumb convenience
-alias cdo="cd ~/gitrepos/na17a/"
+alias cdo="cd ~/gitrepos/irlecture-ss18-material-safety-search/"
 cdoo() {
-  echo "Repo: na17a"
-  cd ~/gitrepos/na17a/
+  echo "Repo: ir"
+  cd ~/gitrepos/irlecture-ss18-material-safety-search/
   echo "Updating repo..."
   git pull
 }
@@ -190,3 +190,7 @@ alias anger='ranger'
 alias ii='cd ~/GDrive/New2016/inf6'
 alias rr='ranger ~/GDrive/New2016/inf6'
 alias updatedb='sudo updatedb'
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/af29lure/.sdkman"
+[[ -s "/home/af29lure/.sdkman/bin/sdkman-init.sh" ]] && source "/home/af29lure/.sdkman/bin/sdkman-init.sh"

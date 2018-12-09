@@ -47,7 +47,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git debian command-not-found)
+plugins=(git debian command-not-found, vi-mode)
 
 # User configuration
 
@@ -199,3 +199,17 @@ alias anger='ranger'
 alias ii='cd ~/GDrive/New2016/inf6'
 alias rr='ranger ~/GDrive/New2016/inf6'
 alias updatedb='sudo updatedb'
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/adrian/.sdkman"
+[[ -s "/home/adrian/.sdkman/bin/sdkman-init.sh" ]] && source "/home/adrian/.sdkman/bin/sdkman-init.sh"
+
+export KEYTIMEOUT=1 # only wait 0.1s after escape to enter normal mode
+
+zle-keymap-select () {
+  case $KEYMAP in
+    vicmd) print -n - '\e]12;red\a';; # 'NORMAL' mode
+    viins|main) print -n '\e]12;lightgray\a';; # 'INSERT' mode
+  esac
+
+  }

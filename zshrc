@@ -208,7 +208,7 @@ export KEYTIMEOUT=1 # only wait 0.1s after escape to enter normal mode
 
 zle-keymap-select () {
   case $KEYMAP in
-    vicmd) print -n - '\e]12;red\a';; # 'NORMAL' mode
+    vicmd) print -n '\e]12;red\a';; # 'NORMAL' mode
     viins|main) print -n '\e]12;lightgray\a';; # 'INSERT' mode
   esac
 

@@ -47,11 +47,13 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git archlinux command-not-found docker)
+plugins=(git archlinux command-not-found docker vi-mode)
 
 # User configuration
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+export PATH=$PATH:$(go env GOPATH)/bin
+export GOPATH=$(go env GOPATH)
 # export MANPATH="/usr/local/man:$MANPATH"
 
 #for python virtualenv
@@ -74,6 +76,16 @@ export LANG=en_US.UTF-8
 
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
+
+export KEYTIMEOUT=1 # only wait 0.1 s after escape to enter normal mode
+zle-keymap-select () {
+  case $KEYMAP in
+    vicmd) print -n '\e]12;red\a';; # 'NORMAL' mode
+    viins|main) print -n '\e]12;lightgray\a';; # 'INSERT' mode
+  esac
+
+}
+
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
@@ -166,29 +178,26 @@ alias ks='cd ~/gitrepos/ks/Part2'
 alias gr="(cd /home/adrian/GDrive/ && grive)"
 
 #Dumb convenience
-alias cdo="cd ~/gitrepos/na17a/"
+alias cdo="cd ~/gitrepos/irlecture-ss18-material-safety-srch/"
+
 cdoo() {
-  echo "Repo: na17a"
-  cd ~/gitrepos/na17a/
+  echo "Repo: irlecture-ss18-material-safety-srch"
+  cd ~/gitrepos/irlecture-ss18-material-safety-srch/
   echo "Updating repo..."
   git pull
-}
-cdi() {
-  echo "Repo: infovis"
-  echo "cd infovisausarbeitung/"
-  cd ~/gitrepos/infovis/infovisausarbeitung/
 }
 
 #Todolist
 t(){
-  (cd /home/adrian/gitrepos/todolist && todolist $@ && git commit -am "update todolist (autocommit)")
+  (cd /home/adrian/gitrepos/todolist && ./todolist-1 $@ && git commit -am "update todolist (autocommit)")
 }
 
 todo() {
-  (cd /home/adrian/gitrepos/todolist && todolist $@)
+  (cd /home/adrian/gitrepos/todolist && ./todolist-1 $@)
 }
 
 alias tl="todo l"
+alias tll="todo l by project"
 
 tgp() {
   (cd /home/adrian/gitrepos/todolist && git push $@)
@@ -208,6 +217,6 @@ tryping() {
 alias deployws='rsync -avP /home/adrian/gitrepos/na17a/Website/* na17a@pcai042.informatik.uni-leipzig.de:/home/na17a/public_html'
 alias mldeployws='rsync -avP /home/adrian/gitrepos/na17a/Website/* root@159.89.4.16:/var/www/html/'
 alias anger='ranger'
-alias ii='cd ~/GDrive/New2016/inf6'
-alias rr='ranger ~/GDrive/New2016/inf6'
+alias ii='cd ~/GDrive/New2016/inf7'
+alias rr='ranger ~/GDrive/New2016/inf7'
 alias updatedb='sudo updatedb'

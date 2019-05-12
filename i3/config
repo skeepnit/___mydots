@@ -202,7 +202,7 @@ bindsym Mod1+r mode "resize"
 bar {
   strip_workspace_numbers yes
   position top
-    status_command py3status -c ~/.i3/i3status.conf
+    status_command py3status -c  ~/.i3/i3status.conf
     colors {
       statusline #CCCCCC
       background #000000
@@ -255,18 +255,25 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10 # increase screen brightness
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10 # decrease screen brightness
 
-# Media player controls
+#########################
+# Media player controls #
+#########################
+# play/pause
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
-bindcode 135 exec --no-startup-id playerctl play-pause
+bindsym F8 exec --no-startup-id playerctl play-pause
+#conextmenu btn (play/pause)
+bindcode 135 exec --no-startup-id playerctl play-pause 
+# next
 bindsym XF86AudioNext exec --no-startup-id playerctl next
-bindcode 78 exec --no-startup-id playerctl next
+bindsym F9 exec --no-startup-id playerctl next
+# previous
 bindsym XF86AudioPrev exec --no-startup-id playerctl previous
-bindcode 77 exec --no-startup-id playerctl previous
+bindsym F7 exec --no-startup-id playerctl previous
 
 # shortcuts for most used programs
 bindsym --release Mod1+Mod4+p exec --no-startup-id scrot -s '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/scrots/'
 bindsym Mod1+Mod4+k exec firefox
-bindsym Mod1+Mod4+g exec google-chrome-stable
+bindsym Mod1+Mod4+g exec google-chrome-stable --force-dark-mode
 bindsym Mod1+Mod4+h exec thunar
 bindsym Mod1+Mod4+s exec spotify
 bindsym Mod1+Mod4+l exec --no-startup-id pavucontrol
@@ -302,7 +309,7 @@ bindsym $mod+Pause mode "$mode_system"
 exec --no-startup-id xset s noblank
 exec --no-startup-id xscreensaver -no-splash
 # redshift (like f.lux)
-exec --no-startup-id redshift-gtk
+#exec --no-startup-id redshift-gtk
 
 #battery notification with xfce power manager
 exec --no-startup-id xfce4-power-manager
@@ -319,4 +326,4 @@ exec --no-startup-id xfce4-power-manager
 exec --no-startup-id /home/adrian/xcapes
 #exec /usr/bin/setxkbmap -option ctrl:nocaps
 #exec /usr/bin/xcape -e 'Control_L=Escape'
-exec --no-startup-id mpv /home/adrian/oxp.wav
+exec --no-startup-id espeak "hello" && mpv /home/adrian/oxp.wav

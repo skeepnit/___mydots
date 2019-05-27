@@ -47,11 +47,11 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git archlinux command-not-found docker vi-mode)
+plugins=(git archlinux command-not-found docker)
 
 # User configuration
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin"
 export PATH=$PATH:$(go env GOPATH)/bin
 export GOPATH=$(go env GOPATH)
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -124,7 +124,7 @@ fortune -cas | lolcat
 
 # useful shortcuts with pacmatic (not in archlinux zsh-plugin)
 alias pacm='sudo pacmatic'
-alias paud='pacaur -Syu --aur'
+alias paud='yay'
 alias pacd='sudo pacmatic -Syu'
 alias pausearch='pacaur -s' #only searches AUR
 alias pacs='pacaur -Ss' #searches all pacman repos + AUR
@@ -217,6 +217,6 @@ tryping() {
 alias deployws='rsync -avP /home/adrian/gitrepos/na17a/Website/* na17a@pcai042.informatik.uni-leipzig.de:/home/na17a/public_html'
 alias mldeployws='rsync -avP /home/adrian/gitrepos/na17a/Website/* root@159.89.4.16:/var/www/html/'
 alias anger='ranger'
-alias ii='cd ~/GDrive/New2016/inf7'
-alias rr='ranger ~/GDrive/New2016/inf7'
+alias ii='cd ~/GDrive/New2016/inf8'
+alias rr='ranger ~/GDrive/New2016/inf8'
 alias updatedb='sudo updatedb'

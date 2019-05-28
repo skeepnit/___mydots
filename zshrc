@@ -56,10 +56,6 @@ export PATH=$PATH:$(go env GOPATH)/bin
 export GOPATH=$(go env GOPATH)
 # export MANPATH="/usr/local/man:$MANPATH"
 
-#for python virtualenv
-export WORKON_HOME=~/.virtualenvs
-source /usr/bin/virtualenvwrapper.sh
-
 source $ZSH/oh-my-zsh.sh
 # needs to have 'zsh-syntax-highlighting' installed
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -76,16 +72,6 @@ export LANG=en_US.UTF-8
 
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
-
-export KEYTIMEOUT=1 # only wait 0.1 s after escape to enter normal mode
-zle-keymap-select () {
-  case $KEYMAP in
-    vicmd) print -n '\e]12;red\a';; # 'NORMAL' mode
-    viins|main) print -n '\e]12;lightgray\a';; # 'INSERT' mode
-  esac
-
-}
-
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"

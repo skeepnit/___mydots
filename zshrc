@@ -7,7 +7,7 @@ export TERM=xterm-256color
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 # prev.: aussiegeek, re5et
-ZSH_THEME="minimal"
+ZSH_THEME="minimal_color"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"

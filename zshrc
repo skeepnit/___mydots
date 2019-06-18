@@ -141,73 +141,16 @@ wtr() {
   curl $q
 }
 
-# Lua/ LOVE
-#for creating .love zips
-alias ziplove='zip -9 -q -r'
-
 ##Mplayer shortcuts for music directories
 # plays current directory on shuffle
 alias mqs='mplayer -quiet -shuffle *'
 # we need to go deeper (one directory deeper)
 alias mqss='mplayer -quiet -shuffle {*,*/*}'
 
-#Frequently used dirs
-alias ks1='cd ~/gitrepos/ks/Part1'
-alias ks='cd ~/gitrepos/ks/Part2'
-
 #alias for syncing files with Google Drive
 #alias gr="echo '[Warning] Changing directory' && cd /home/adrian/GDrive/ && grive"
 alias gr="(cd /home/adrian/GDrive/ && grive)"
 
-#Dumb convenience
-alias cdo="cd ~/gitrepos/na17a/"
-cdoo() {
-  echo "Repo: na17a"
-  cd ~/gitrepos/na17a/
-  echo "Updating repo..."
-  git pull
-}
-
-#Todolist
-t(){
-  (cd /home/adrian/gitrepos/todolist && todolist $@ && git commit -am "update todolist (autocommit)")
-}
-
-todo() {
-  (cd /home/adrian/gitrepos/todolist && todolist $@)
-}
-
-alias tl="todo l"
-alias tll="todo l by project"
-
-tgp() {
-  (cd /home/adrian/gitrepos/todolist && git push $@)
-}
-
-tgl() {
-  (cd /home/adrian/gitrepos/todolist && git pull $@)
-}
-
-tg() {
-  (cd /home/adrian/gitrepos/todolist && git $@)
-}
-
-alias deployws='rsync -avP /home/adrian/gitrepos/na17a/Website/* na17a@pcai042.informatik.uni-leipzig.de:/home/na17a/public_html'
+# convenience
 alias anger='ranger'
-alias ii='cd ~/GDrive/New2016/inf6'
-alias rr='ranger ~/GDrive/New2016/inf6'
 alias updatedb='sudo updatedb'
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/home/adrian/.sdkman"
-[[ -s "/home/adrian/.sdkman/bin/sdkman-init.sh" ]] && source "/home/adrian/.sdkman/bin/sdkman-init.sh"
-
-export KEYTIMEOUT=1 # only wait 0.1s after escape to enter normal mode
-
-zle-keymap-select () {
-  case $KEYMAP in
-    vicmd) print -n '\e]12;red\a';; # 'NORMAL' mode
-    viins|main) print -n '\e]12;lightgray\a';; # 'INSERT' mode
-  esac
-
-  }

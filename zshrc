@@ -90,7 +90,8 @@ alias ...='cd ../..'
 #Beginning of Terminal
 
 # export LANG=en_US.UTF-8 subl
-fortune -a | lolcat
+#fortune -a | lolcat
+fortune -a | cowsay
 
 ###########
 # ALIASES #
@@ -172,3 +173,13 @@ tg() {
 alias deployws='rsync -avP /Users/adrian/gitrepos/na17a/Website/* na17a@pcai042.informatik.uni-leipzig.de:/home/na17a/public_html'
 alias ii='cd ~/Google\ Drive/New2016/inf6'
 alias rr='ranger ~/Google\ Drive/New2016/inf6'
+
+alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
+
+alias runpost='docker run --rm --name pg-docker -e POSTGRES_PASSWORD=docker -d -p 5432:5432 -v $HOME/docker/volumes/postgres:/var/lib/postgresql/data postgres'
+
+alias dsrm="find . -name '.DS_Store' -type f -delete"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/adrian/.sdkman"
+[[ -s "/Users/adrian/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/adrian/.sdkman/bin/sdkman-init.sh"

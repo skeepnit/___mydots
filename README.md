@@ -1,14 +1,13 @@
-# My dotfiles
+#
+My dotfiles
 Hi.
 
 This is my dotfiles backup archive.
 
-I use: 
+Favorite basic tools:
 
-  - [oh-my-zsh](http://ohmyz.sh/) | zsh
+  - [oh-my-zsh](http://ohmyz.sh/)
 
-  - [pivotal/vim-config](https://github.com/pivotal/vim-config) | vim
-
-  - [py3status](https://github.com/ultrabug/py3status) | i3
+  - [neovim](https://neovim.io)
   
-  - [termite](https://github.com/thestinger/termite) | terminal 
+  - [lxterminal](https://github.com/lxde/lxterminal)

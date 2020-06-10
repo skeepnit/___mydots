@@ -10,4 +10,4 @@ Favorite basic tools:
 
   - [neovim](https://neovim.io)
   
-  - [lxterminal](https://github.com/lxde/lxterminal)
+  - [kitty](https://sw.kovidgoyal.net/kitty/)

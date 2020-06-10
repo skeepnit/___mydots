@@ -230,7 +230,8 @@ new_window pixel 1
 #workspace 2 output eDP1
 
 #window transparency
-exec_always --no-startup-id xcompmgr -c -C
+#exec_always --no-startup-id xcompmgr -c -C
+exec_always --no-startup-id picom -f -c -C
 ####################
 ## BACKGROUND PIC ##
 ####################
@@ -302,7 +303,7 @@ mode "$mode_system" {
     bindsym Escape mode "default"
 }
 
-bindsym $mod+Pause mode "$mode_system"
+bindsym Mod4+Shift+l "$mode_system"
 
 # NO screensaver
 exec --no-startup-id xset s noblank

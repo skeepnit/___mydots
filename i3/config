@@ -202,7 +202,7 @@ bindsym Mod1+m mode "resize"
 bar {
   strip_workspace_numbers yes
   position top
-    status_command py3status -c  ~/.i3/i3status.conf
+    status_command py3status -c  ~/.config/i3/i3status.conf
     colors {
       statusline #CCCCCC
       background #000000
@@ -217,7 +217,7 @@ new_window pixel 1
 # keysym-based config which used their favorite modifier (alt or windows)
 #
 # i3-config-wizard will not launch if there already is a config file
-# in ~/.i3/config.
+# in ~/.config/i3/config.
 #
 # Please remove the following exec line:
 #######################################################################
@@ -282,21 +282,21 @@ bindsym Mod1+Mod4+j exec --no-startup-id steam
 bindsym Mod1+Mod4+q exec --no-startup-id qutebrowser
 
 # 1080p-settings
-bindsym Mod4+l exec --no-startup-id i3lock -i ~/.i3/i3locked1920x1080.jpg
+bindsym Mod4+l exec --no-startup-id i3lock -i ~/.config/i3/i3locked1920x1080.jpg
 
 # X220 settings
-#bindsym Mod4+l exec --no-startup-id i3lock -i ~/.i3/i3locked1366x768.png
-#bindsym XF86Launch1 exec --no-startup-id i3lock -i ~/.i3/i3locked1366x768.png
-#bindsym XF86ScreenSaver exec --no-startup-id i3lock -i ~/.i3/i3locked1366x768.png
+#bindsym Mod4+l exec --no-startup-id i3lock -i ~/.config/i3/i3locked1366x768.png
+#bindsym XF86Launch1 exec --no-startup-id i3lock -i ~/.config/i3/i3locked1366x768.png
+#bindsym XF86ScreenSaver exec --no-startup-id i3lock -i ~/.config/i3/i3locked1366x768.png
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
-    bindsym l exec --no-startup-id /home/adrian/.i3/i3exit lock, mode "default"
-    bindsym e exec --no-startup-id /home/adrian/.i3/i3exit logout, mode "default"
-    bindsym s exec --no-startup-id /home/adrian/.i3/i3exit suspend, mode "default"
-    bindsym h exec --no-startup-id /home/adrian/.i3/i3exit hibernate, mode "default"
-    bindsym r exec --no-startup-id /home/adrian/.i3/i3exit reboot, mode "default"
-    bindsym Shift+s exec --no-startup-id /home/adrian/.i3/i3exit shutdown, mode "default"
+    bindsym l exec --no-startup-id /home/adrian/.config/i3/i3exit lock, mode "default"
+    bindsym e exec --no-startup-id /home/adrian/.config/i3/i3exit logout, mode "default"
+    bindsym s exec --no-startup-id /home/adrian/.config/i3/i3exit suspend, mode "default"
+    bindsym h exec --no-startup-id /home/adrian/.config/i3/i3exit hibernate, mode "default"
+    bindsym r exec --no-startup-id /home/adrian/.config/i3/i3exit reboot, mode "default"
+    bindsym Shift+s exec --no-startup-id /home/adrian/.config/i3/i3exit shutdown, mode "default"
 
     # back to normal: Enter or Escape
     bindsym Return mode "default"

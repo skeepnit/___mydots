@@ -5,9 +5,14 @@
 setxkbmap -option grp:switch,grp:lctrl_lwin_toggle,grp_led:caps -layout us,de -variant ,qwerty
 
 # do the magic
-xmodmap -e 'clear Lock'
-xmodmap -e 'keycode 66 = Control_L'
-xmodmap -e 'add Control = Control_L'
+#xmodmap -e 'clear Lock'
+#xmodmap -e 'keycode 66 = Control_L'
+#xmodmap -e 'add Control = Control_L'
 # make fake esc key to be mapped with xcape
-xmodmap -e 'keycode 999 = Escape'
+#xmodmap -e 'keycode 999 = Escape'
+
+# what is this ^^^ lol seems unnecessary
+
+# for my Planck (has esc key at capslock location)
+xmodmap -e 'add Control = Escape'
 xcape -e 'Control_L=Escape'

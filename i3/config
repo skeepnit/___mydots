@@ -323,9 +323,9 @@ exec --no-startup-id xfce4-power-manager
 #bindsym Mod2+Shift+p exec setxkbmap us
 
 #Keyboard config
-#exec --no-startup-id /home/adrian/xcapes
+exec --no-startup-id /home/adrian/.config/xcapes
 
-exec --no-startup-id /home/adrian/.screenlayout/hdmionly.sh
+#exec --no-startup-id /home/adrian/.screenlayout/hdmionly.sh
 #exec /usr/bin/setxkbmap -option ctrl:nocaps
 #exec /usr/bin/xcape -e 'Control_L=Escape'
-exec --no-startup-id espeak "hello" && mpv /home/adrian/oxp.wav
+exec --no-startup-id espeak "hello" && mpv /home/adrian/Music/oxp.wav

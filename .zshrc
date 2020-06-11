@@ -47,7 +47,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git debian command-not-found, vi-mode)
+plugins=(git archlinux)
 
 # User configuration
 
@@ -56,17 +56,12 @@ plugins=(git debian command-not-found, vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 # needs to have 'zsh-syntax-highlighting' installed
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+export EDITOR='nvim'
 
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
@@ -82,7 +77,6 @@ export ARCHFLAGS="-arch x86_64"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 ## cd
 alias ..='cd ..'
@@ -103,17 +97,6 @@ fortune -ca | lolcat
 ###########
 # ALIASES #
 ###########
-#
-#export CLASSPATH=$CLASSPATH:.:/home/adrian/tools/Tools.zip
-
-# useful shortcuts with pacmatic (not in archlinux zsh-plugin)
-alias pacm='sudo pacmatic'
-alias paud='pacaur -Syu --aur'
-alias pacd='sudo pacmatic -Syu'
-alias pausearch='pacaur -s' #only searches AUR
-alias pacs='pacaur -Ss' #searches all pacman repos + AUR
-
-alias brokenzsh='./home/adrian/.brokenzsh'
 
 alias rm='rm -i'
 alias dtrx='dtrx -v'
@@ -128,7 +111,6 @@ alias lag="ls -la | grep -ie"
 alias pingg="ping www.google.com -c3"
 alias youtube-viewer='youtube-viewer -C'
 alias k='tree'
-alias xmod='xmodmap ~/.Xmodmap'
 alias ccat='pygmentize -g'
 alias status='git status'
 alias open='xdg-open'
@@ -143,73 +125,13 @@ wtr() {
   curl $q
 }
 
-# Lua/ LOVE
-#for creating .love zips
-alias ziplove='zip -9 -q -r'
-
 ##Mplayer shortcuts for music directories
 # plays current directory on shuffle
 alias mqs='mplayer -quiet -shuffle *'
 # we need to go deeper (one directory deeper)
 alias mqss='mplayer -quiet -shuffle {*,*/*}'
 
-#Frequently used dirs
-alias ks1='cd ~/gitrepos/ks/Part1'
-alias ks='cd ~/gitrepos/ks/Part2'
-
-#alias for syncing files with Google Drive
-#alias gr="echo '[Warning] Changing directory' && cd /home/adrian/GDrive/ && grive"
-alias gr="(cd /home/adrian/GDrive/ && grive)"
-
-#Dumb convenience
-alias cdo="cd ~/gitrepos/na17a/"
-cdoo() {
-  echo "Repo: na17a"
-  cd ~/gitrepos/na17a/
-  echo "Updating repo..."
-  git pull
-}
-
-#Todolist
-t(){
-  (cd /home/adrian/gitrepos/todolist && todolist $@ && git commit -am "update todolist (autocommit)")
-}
-
-todo() {
-  (cd /home/adrian/gitrepos/todolist && todolist $@)
-}
-
-alias tl="todo l"
-alias tll="todo l by project"
-
-tgp() {
-  (cd /home/adrian/gitrepos/todolist && git push $@)
-}
-
-tgl() {
-  (cd /home/adrian/gitrepos/todolist && git pull $@)
-}
-
-tg() {
-  (cd /home/adrian/gitrepos/todolist && git $@)
-}
-
-alias deployws='rsync -avP /home/adrian/gitrepos/na17a/Website/* na17a@pcai042.informatik.uni-leipzig.de:/home/na17a/public_html'
+#Dumb convenience#
+alias vim='nvim'
 alias anger='ranger'
-alias ii='cd ~/GDrive/New2016/inf6'
-alias rr='ranger ~/GDrive/New2016/inf6'
 alias updatedb='sudo updatedb'
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/home/adrian/.sdkman"
-[[ -s "/home/adrian/.sdkman/bin/sdkman-init.sh" ]] && source "/home/adrian/.sdkman/bin/sdkman-init.sh"
-
-export KEYTIMEOUT=1 # only wait 0.1s after escape to enter normal mode
-
-zle-keymap-select () {
-  case $KEYMAP in
-    vicmd) print -n '\e]12;red\a';; # 'NORMAL' mode
-    viins|main) print -n '\e]12;lightgray\a';; # 'INSERT' mode
-  esac
-
-  }

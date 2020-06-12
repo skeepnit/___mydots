@@ -311,8 +311,7 @@ exec --no-startup-id xscreensaver -no-splash
 # redshift (like f.lux)
 #exec --no-startup-id redshift-gtk
 
-#battery notification with xfce power manager
-exec --no-startup-id xfce4-power-manager
+exec --no-startup-id redshift-gtk
 
 #make Spotify work :) //since ver1.x not necessary anymore
 #for_window [class="^Spotify$"] floating enable
